@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import DetailProduct from "./pages/DetailProduct";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/product/:id" element={<DetailProduct />} />
         </Routes>
         <Footer />
+        <ToastContainer theme="colored" />
       </BrowserRouter>
     </div>
   );
