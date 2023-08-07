@@ -1,4 +1,5 @@
 import { FaFacebookSquare, FaInstagram, FaTwitterSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,10 +16,18 @@ const Footer = () => {
         <div className="col-start-5">
           <h5 className="text-xl font-semibold">Sitemap</h5>
           <ul>
-            <li className="text-sm my-2">Home</li>
-            <li className="text-sm my-2">Product</li>
-            <li className="text-sm my-2">Contact</li>
-            <li className="text-sm my-2">About</li>
+            <Link to={"/"}>
+              <li className="text-sm my-2">Home</li>
+            </Link>
+            <Link to={"/product"}>
+              <li className="text-sm my-2">Product</li>
+            </Link>
+            <Link to={"/contact"}>
+              <li className="text-sm my-2">Contact</li>
+            </Link>
+            <Link to={"/about"}>
+              <li className="text-sm my-2">About</li>
+            </Link>
           </ul>
         </div>
         <div className="col-start-6">
