@@ -1,4 +1,4 @@
-import { FaFacebookSquare, FaInstagram, FaTwitterSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -33,9 +33,9 @@ const Footer = () => {
         <div className="col-start-6">
           <h5 className="text-xl font-semibold">Contact Us</h5>
           <div className="flex">
-            <FaFacebookSquare size={30} />
-            <FaTwitterSquare size={30} className="ml-2" />
-            <FaInstagram size={30} className="ml-2" />
+            <a href="https://www.instagram.com/oh.byutii/" target="_blank" rel="noreferrer">
+              <FaInstagram size={30} className="" />
+            </a>
           </div>
           <p>ohbyutii@gmail.com</p>
           <p>087821254523</p>

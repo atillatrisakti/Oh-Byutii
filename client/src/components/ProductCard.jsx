@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
         <h6 className="font-semibold text-lg">{product.title}</h6>
       </div>
       <div className="flex justify-center">
-        <span className="text-sm mt-1">Rp.{product.price}</span>
+        <span className="text-sm mt-1">Rp{product.price}</span>
       </div>
     </div>
   );

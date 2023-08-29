@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import best from "../assets/best.jpg";
-import bestt from "../assets/hero.webp";
 import "../styles/Detailproduct.css";
 import { supabase } from "../config/supabaseClient";
 import { BsWhatsapp } from "react-icons/bs";
@@ -33,8 +31,6 @@ const DetailProduct = () => {
     window.open(`https://wa.me/628194020901?text=${message}`);
   };
 
-  console.log(products);
-
   return (
     <div className="py-[20px] px-[50px] flex gap-[50px] h-[100vh]">
       <>
@@ -50,7 +46,7 @@ const DetailProduct = () => {
         <div className="right" key={products?.id}>
           <h1 className="text-2xl font-bold">{products?.title}</h1>
           <span className="text-lg font-semibold text-[#5C8323]">
-            Rp.
+            Rp
             {products?.price}
           </span>
           <p className="text-justify text-lg">{products?.description}</p>
